@@ -12,12 +12,12 @@
 
 </head>
 
-<body class="bg-gray-50 flex flex-col h-screen">
+<body class="bg-gray-50 flex flex-col h-screen " data-scroll-container>
     <header></header>
-    <section id="skill" class=" w-full">
-        <div class="h-auto py-4 bg-zinc-900 w-full flex-wrap flex flex-row items-center justify-center">
+    <section id="skill" class=" w-full data-scroll-section">
+        <div class="h-auto py-4 bg-zinc-800 w-full flex-wrap flex flex-row items-center justify-center">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                alt="Typescript logo" class="w-5 md:w-12 mx-3" />
+                alt="Typescript logo" class="w-5 md:w-12 mx-3 " />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                 alt="React logo" class="w-6 md:w-12 mx-3 py-3" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="Sass logo"
@@ -32,33 +32,51 @@
                 alt="redux Logo" class="w-6 md:w-12 mx-3" />
         </div>
 
-        <div class="bg-zinc-900 flex flex-col items-center ">
+        <div class="bg-zinc-900 flex flex-col items-center py-10">
             <div class="py-4 w-full h-50 max-w-screen-sm mx-auto text-center flex items-center flex-col pb-10 ">
                 <h1 class="text-gray-50 font-bold pb-6 text-3xl md:text-4xl">About me</h1>
-                <p class="text-gray-50 font-sans px-6  py-2 md:px-12 xl:text-xl">
+                <p class="text-gray-50 font-sans px-6  py-2 md:px-12 lg:text-xl">
                     Hi👋, I'm Pierrick Bernard, a Freelance Frontend developer with an impressive skill set. I've
                     learned to code as a self-taught, enabling me to write <span class="font-bold ">Clean Code
                     </span>and understand <span class="font-bold">SEO</span> and <span class="font-bold">UI/UX</span>
-                    deeply.
+                    deeply.Collaborative team player adept at producing
+                    web applications efficiently.
                 </p>
-                <p class="text-gray-50 font-sans px-6 md:px-12 xl:text-xl"> Collaborative team player adept at producing
-                    web applications efficiently.</p>
-           
-            </div>
-            <div class="mb-10">
 
-                <a href=" https://www.malt.fr/profile/pierrickbernard1"
-                    class="py-3 px-4 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-400 mb-5 hover:bg-red-300">Hire
-                    me</a>
+
             </div>
+           
         </div>
 
 
     </section>
+    <section id="Project" class="flex flex-col justify-center items-center mb-10">
+        <div class="p-10">
+            <h2 class=" text-center  font-bold pt-10 pb-6 text-3xl md:text-4xl text-zinc-900">
+                Project
+            </h2>
+            <hr class=" mx-auto bg-zinc-900 h-0.5 mb-10 w-20">
 
-    <section id="contact" class="bg-gray-50 pb-5 ">
+            <div class="flex flex-col items-center text-center lg:flex-row pb-24">
+                <img src="./assets/swatch.png" alt="Reproduction swatch web site" class="w-[250px] h-28 object-contain mr-3 mb-5">
+                <div>
+                    <h3 class="text-red-400 font-bold">Clone swatch🪐</h3>
+                    <p class="w-[200px]">Reproduction of swatch website, using html,css and js vanilla </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center lg:flex-row-reverse">
+                <img src="./assets/twitterClone.png" alt="Reproduction swatch web site" class="w-[250px] h-28 object-contain mr-3 mb-5">
+                <div>
+                    <h3 class="text-red-400 font-bold">Clone Twitter 🐦 </h3>
+                    <p class="w-[200px]">Reproduction of X , made with reatc, vanilla css and redux </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h2 class="text-center font-bold pt-10 pb-6 text-3xl md:text-4xl text-zinc-900">
+    <section id="contact" class="bg-gray-50 pb-5" data-scroll>
+
+        <h2 class="text-center font-bold pt-10 pb-6 text-3xl md:text-4xl text-zinc-900 ">
             Contact
         </h2>
         <hr class="bloc mx-auto bg-zinc-900 h-0.5 mb-10 w-20">
@@ -104,13 +122,13 @@
             <hr class="block bg-gray-100 h-0.5 w-full ">
         </div>
         <div class="flex flex-row">
-            <a href="">
+            <a href="https://www.linkedin.com/in/pierrick-bernard-etuve/">
                 <img src="./assets/LinkdinW.svg" alt="icone linkedin" class="w-5 py-2 mx-2">
             </a>
-            <a href="">
+            <a href="https://github.com/pierrick951">
                 <img src="./assets/GithubW.svg" alt="icone github" class="w-5 py-2 mx-2">
             </a>
-            <a href="">
+            <a href="https://bento.me/en/home">
                 <img src="./assets/bento.svg" alt="icone vers mon bento.me" class="w-5 py-2 mx-2">
             </a>
         </div>
