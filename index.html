@@ -1,4 +1,4 @@
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,18 +14,48 @@
 
 <body class="bg-gray-50 flex flex-col h-screen">
     <header></header>
-   <section id="skill">
-    <div class="h-auto py-8 bg-zinc-900 w-full flex-wrap flex flex-row items-center justify-center">
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"  alt="typescript logo"
-        class="w-12"
-        />
-          
+    <section id="skill" class=" w-full">
+        <div class="h-auto py-4 bg-zinc-900 w-full flex-wrap flex flex-row items-center justify-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="Typescript logo" class="w-5 md:w-12 mx-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="React logo" class="w-6 md:w-12 mx-3 py-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="Sass logo"
+                class="w-6 md:w-12 mx-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                alt="Figma logo" class="w-6 md:w-12 mx-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwindcss logo" class="w-6 md:w-12 mx-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Css logo"
+                class="w-6 md:w-12 mx-3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                alt="redux Logo" class="w-6 md:w-12 mx-3" />
+        </div>
 
-    </div>
-   </section>
-      
-    <!-- formulaire -->
+        <div class="bg-zinc-900 flex flex-col items-center ">
+            <div class="py-4 w-full h-50 max-w-screen-sm mx-auto text-center flex items-center flex-col pb-10 ">
+                <h1 class="text-gray-50 font-bold pb-6 text-3xl md:text-4xl">About me</h1>
+                <p class="text-gray-50 font-sans px-6  py-2 md:px-12 xl:text-xl">
+                    Hi👋, I'm Pierrick Bernard, a Freelance Frontend developer with an impressive skill set. I've
+                    learned to code as a self-taught, enabling me to write <span class="font-bold ">Clean Code
+                    </span>and understand <span class="font-bold">SEO</span> and <span class="font-bold">UI/UX</span>
+                    deeply.
+                </p>
+                <p class="text-gray-50 font-sans px-6 md:px-12 xl:text-xl"> Collaborative team player adept at producing
+                    web applications efficiently.</p>
+           
+            </div>
+            <div class="mb-10">
+
+                <a href=" https://www.malt.fr/profile/pierrickbernard1"
+                    class="py-3 px-4 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-400 mb-5 hover:bg-red-300">Hire
+                    me</a>
+            </div>
+        </div>
+
+
+    </section>
+
     <section id="contact" class="bg-gray-50 pb-5 ">
 
         <h2 class="text-center font-bold pt-10 pb-6 text-3xl md:text-4xl text-zinc-900">
@@ -36,37 +66,56 @@
         <form class="space-y-6 relative max-w-3xl mx-auto w-full py-10 px-4 sm:px-6 lg:px-8 ">
 
             <div>
-                <label for="nom" class="text-red-400 font-bold mb-2 block">Nom</label>
-                <input type="text" id="nom" placeholder="Votre Nom"
-                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md">
+                <label for="nom" class="text-red-400 font-bold mb-2 block">Last Name</label>
+                <input type="text" id="nom" placeholder="last name"
+                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md "
+                    required aria-required="your last name">
             </div>
 
             <div class="">
-                <label for="prenom" class="text-red-400 font-bold mb-2 block">Prénom</label>
-                <input type="text" id="prenom" placeholder="Votre Prénom"
-                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md">
+                <label for="prenom" class="text-red-400 font-bold mb-2 block"> First Name</label>
+                <input type="text" id="prenom" placeholder="first name"
+                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"
+                    required aria-required="your First name">
             </div>
 
-          
+
 
             <div>
                 <label for="message" class="text-red-400 font-bold mb-2 block">Message</label>
-                <textarea type="text" id="message" placeholder="Ici votre message"
-                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"></textarea>
+                <textarea type="text" id="message" placeholder="here is your message"
+                    class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md resize-none"
+                    required aria-required="message"></textarea>
             </div>
 
             <div class="text-center lg:text-left">
                 <button
-                    class="py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-400">Envoyer</button>
+                    class="py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-400"
+                    aria-label="send form" tabindex="0">Send</button>
             </div>
         </form>
 
     </section>
 
-    <footer class="bg-zinc-900 w-full h-full ">
-        <h3 class="text-center py-3 font-bold text-xl text-gray-50">Pierrick B.</h3>
-        <hr class="bloc mx-auto bg-zinc-900 h-0.5 mb-10 w-20">
+    <footer
+        class="bg-gradient-to-r from-zinc-800 to-zinc-900 w-full h-full flex justify-center items-center flex-col py-2">
+        <div class="pb-2 ">
+            <h3 class="py-3 font-bold text-xl text-gray-100">Pierrick B.</h3>
+            <hr class="block bg-gray-100 h-0.5 w-full ">
+        </div>
+        <div class="flex flex-row">
+            <a href="">
+                <img src="./assets/LinkdinW.svg" alt="icone linkedin" class="w-5 py-2 mx-2">
+            </a>
+            <a href="">
+                <img src="./assets/GithubW.svg" alt="icone github" class="w-5 py-2 mx-2">
+            </a>
+            <a href="">
+                <img src="./assets/bento.svg" alt="icone vers mon bento.me" class="w-5 py-2 mx-2">
+            </a>
+        </div>
     </footer>
+
 
 </body>
 
